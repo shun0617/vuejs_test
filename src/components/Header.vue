@@ -1,3 +1,4 @@
+
 <template>
     <div class="header">
         <input @click="userClick" type="submit" placeholder="受け取る">
