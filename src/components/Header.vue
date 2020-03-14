@@ -1,23 +1,23 @@
-
 <template>
     <div class="header">
-        <input @click="userClick" type="submit" placeholder="受け取る">
-        <p>{{text}}</p>
+        <button @click="userClick" type="button">受け取る</button>
+        <p>{{show}}</p>
     </div>
 </template>
 
 <script>
 export default {
+    data() {
+        return {
+            show: ''
+        }
+    },
     props: ["parentText"],
-
     methods: {
         userClick() {
-                this.text = this.parentText
+                this.show = this.parentText
         }
     }
 }
 </script>
 
-<style scoped>
-
-</style>
